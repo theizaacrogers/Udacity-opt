@@ -462,7 +462,7 @@ var resizePizzas = function(size) {
         default:
           console.log("bug in sizeSwitcher");
       }
-    var randPizza = document.querySelectorAll(".randomPizzaContainer");
+    var randPizza = document.getElementsByClassName("randomPizzaContainer");
     for (var i = 0; i < randPizza.length; i++) {
       //var dx = determineDx(randPizza[i], size);
       //var newwidth = (randPizza[i].offsetWidth + dx) + 'px';
@@ -538,7 +538,7 @@ window.addEventListener('scroll', updatePositions);
 // Generates the sliding pizzas when the page loads.
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
-  var s = 256;
+  var s = 50;
   for (var i = 0; i < 200; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
